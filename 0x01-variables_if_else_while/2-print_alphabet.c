@@ -8,14 +8,13 @@
 
 int main(void)
 {
-char a = 'a';
-int n = 0;
+char letter;
 
-while (n < 26)
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-a++;
-n++;
+printf("%c ", letter);
 }
-putchar('\n');
+printf("\n");
 return (0);
 }
+
