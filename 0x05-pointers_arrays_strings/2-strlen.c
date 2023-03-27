@@ -12,5 +12,5 @@ while (s[i] != '\0')
 len += 1;
 i++;
 }
-return(len);
+return (len);
 }
