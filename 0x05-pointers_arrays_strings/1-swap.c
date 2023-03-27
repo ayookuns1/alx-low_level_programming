@@ -1,15 +1,13 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
-*swap_int -  the function
-*@a: the integer
-*@b: the second integer
-*return: the value of n
-*/
-
+ *swap_int - swap two integers
+ *@a: Pointer to the integer to be swaped with a
+ *@b: Pointer to the interget to be swaped with b
+ *Return: void
+ */
 void swap_int(int *a, int *b)
 {
-*a = 42;
-*b = 98;
+int c = *a;
+*a = *b;
+*b = c;
 }
-
