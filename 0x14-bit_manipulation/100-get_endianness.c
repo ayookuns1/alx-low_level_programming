@@ -11,8 +11,8 @@ int get_endianness(void)
 	char *ptr = (char *)&test;
 
 	if (*ptr == 1)
-		return 1; /* Little Endian */
+		return (1); /* Little Endian */
 	else
-		return 0; /* Big Endian */
+		return (0); /* Big Endian */
 }
 
