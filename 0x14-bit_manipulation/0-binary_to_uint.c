@@ -10,21 +10,24 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+	unsigned int result = 0;
+	const char *current;
+
 	if (b == NULL)
 		return (0);
 
-	unsigned int result = 0;
+	current = b;
 
-	while (*b != '\0')
+	while (*current != '\0')
 	{
-		if (*b == '0')
+		if (*current == '0')
 			result = (result << 1); /* Shift left to add a 0 */
-		else if (*b == '1')
+		else if (*current == '1')
 			result = (result << 1) | 1; /* Shift left and add a 1 */
 		else
 			return (0); /* Return 0 if a character other than 0 or 1 is found */
 
-		b++; /* Move to the next character */
+		current++; /* Move to the next character */
 	}
 
 	return (result);
